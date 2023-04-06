@@ -186,8 +186,8 @@ ask_question_cmd <- function(question) {
 }
 
 #' Subset by ID
-#' @param template_list
-#' @param ids
+#' @param template_list a list of question templates
+#' @param ids Ids of the templates to be subsetted.
 #' @export
 subset_templates_by_id <- function(
   template_list,
@@ -200,3 +200,4 @@ subset_templates_by_id <- function(
   # Return the subset
   template_list[matches]
 }
+
