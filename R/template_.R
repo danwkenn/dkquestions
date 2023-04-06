@@ -89,6 +89,43 @@ question <- list(
 question
 }
 
+#' Determines if a given response matches an answer text.
+#' @param answer_text Text for a given answer.
+#' @param response user response
+match_answer <- function(
+  answer_text,
+  response
+) {
+
+  if (grepl(pattern = "^GREPL",answer_text)) {
+    pattern = sub(
+      "^GREPL(.*)$",
+      "\\1",
+      answer_text
+    )
+
+    pattern <- gsub(
+      pattern = "<<<",
+      "{",
+      pattern
+    )
+
+    pattern <- gsub(
+      pattern = ">>>",
+      "}",
+      pattern
+    )
+    return(grepl(
+      pattern = pattern,
+      x = response
+    ))
+  } else {
+    return(answer_text == response)
+  }
+
+}
+
+
 #' Ask a question using the command-line.
 #'
 #' @param question Question.
@@ -112,9 +149,14 @@ ask_question_cmd <- function(question) {
   answer_marks <- sapply(
     question$answer,
     FUN = function(x) x$mark)
-  
-  match <- which(answer_texts == answer)
-  
+  answer_texts
+
+  match <- which(
+    sapply(
+      answer_texts,
+      match_answer,
+      response = answer))
+
   if(length(match) == 0) {
     return(
       list(
@@ -125,6 +167,7 @@ ask_question_cmd <- function(question) {
       )
     )
   } else {
+    match <- match[[1]]
     return(
       list(
         input = answer,
@@ -134,4 +177,20 @@ ask_question_cmd <- function(question) {
       )
     )
   }
+}
+
+#' Subset by ID
+#' @param template_list
+#' @param ids
+#' @export
+subset_templates_by_id <- function(
+  template_list,
+  ids) {
+
+  # Extract IDs
+  template_ids <- sapply(template_list, function(x) x[["id"]])
+  # Find items which match
+  matches <- which(template_ids %in% ids)
+  # Return the subset
+  template_list[matches]
 }
