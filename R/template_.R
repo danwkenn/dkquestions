@@ -57,7 +57,7 @@ for (i in seq_along(template$slots)) {
    remaining_ids <- eval(expression)
    sample_id <- sample_from(remaining_ids)
    } else {
-    sample_id <- slots[[paste0(template$slots[[i]]$id, "_ID")]] 
+    sample_id <- slots[[paste0(template$slots[[i]]$id, "_ID")]]
   }
 
   value <- get_value(
