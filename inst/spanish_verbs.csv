@@ -1,0 +1,11 @@
+id,word,translation,reflexive
+1,comer,to eat,FALSE
+2,nadar,to swim,FALSE
+3,ser,to be (permanent),FALSE
+4,acostarse,to go to bed,TRUE
+5,hacer,to do/make,FALSE
+6,venir,to come,FALSE
+7,llegar,to arrive,FALSE
+8,ver,to see,FALSE
+9,ir,to go,FALSE
+10,comenzar,to begin,FALSE

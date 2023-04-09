@@ -1,0 +1,10 @@
+---
+title: test
+params:
+  questions: NULL
+---
+
+```{r, results='asis'}
+library(dkquestions)
+print_questions_as_md(questions)
+```

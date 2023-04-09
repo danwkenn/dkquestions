@@ -1,0 +1,32 @@
+templates:
+- id: OIRUemDsjVh6JdzCW3QH
+  background: Practice "{infinitive}". Use the word "all" if plural and distinguishing is required. Use (formal) or (informal) and masculine/feminine if necessary.
+  prompt: translate '{pronoun} {verbform}' to english
+  slots:
+    verbform:
+      dataset: temp
+      id: DATATABLE data[tense_english %in% c("present","imperfect","preterite"), id]
+      field: verb_form
+    english_form:
+      dataset: temp
+      id: verbform
+      field: english_form
+    english_pronoun:
+      dataset: temp
+      id: verbform
+      field: english_word
+    pronoun:
+      dataset: temp
+      id: verbform
+      field: word
+    infinitive:
+      dataset: temp
+      id: verbform
+      field: infinitive
+  answer:
+  - text: "{english_pronoun} {english_form}"
+    feedback: "Correct!"
+    mark: 1.0
+  preprocessing: inst/example_preprocessing.R
+  datasets:
+    temp: FUNCTION temp

@@ -1,0 +1,273 @@
+verb_id,person,plural,formal,tense_id,value,english_participle
+1,1,FALSE,FALSE,1,como,eat
+1,2,FALSE,FALSE,1,comes,eat
+1,2,FALSE,TRUE,1,come,eat
+1,3,FALSE,FALSE,1,come,eats
+1,1,TRUE,FALSE,1,comemos,eat
+1,2,TRUE,FALSE,1,coméis,eat
+1,2,TRUE,TRUE,1,comen,eat
+1,3,TRUE,FALSE,1,comen,eat
+1,1,FALSE,FALSE,3,comí,ate
+1,2,FALSE,FALSE,3,comiste,ate
+1,2,FALSE,TRUE,3,comió,ate
+1,3,FALSE,FALSE,3,comió,ate
+1,1,TRUE,FALSE,3,comimos,ate
+1,2,TRUE,FALSE,3,comisteis,ate
+1,2,TRUE,TRUE,3,comieron,ate
+1,3,TRUE,FALSE,3,comieron,ate
+1,1,FALSE,FALSE,2,comía,used to eat
+1,2,FALSE,FALSE,2,comías,used to eat
+1,2,FALSE,TRUE,2,comía,used to eat
+1,3,FALSE,FALSE,2,comía,used to eat
+1,1,TRUE,FALSE,2,comíamos,used to eat
+1,2,TRUE,FALSE,2,comíais,used to eat
+1,2,TRUE,TRUE,2,comían,used to eat
+1,3,TRUE,FALSE,2,comían,used to eat
+1,2,FALSE,FALSE,4,come,eat
+1,2,FALSE,TRUE,4,coma,eat
+1,2,TRUE,FALSE,4,comed,eat
+1,2,TRUE,TRUE,4,coman,eat
+1,2,FALSE,FALSE,5,no comas,do not eat
+1,2,FALSE,TRUE,5,no coma,do not eat
+1,2,TRUE,FALSE,5,no comáis,do not eat
+1,2,TRUE,TRUE,5,no coman,do not eat
+2,1,FALSE,FALSE,1,nado,swim
+2,2,FALSE,FALSE,1,nadas,swim
+2,2,FALSE,TRUE,1,nada,swim
+2,3,FALSE,FALSE,1,nada,swims
+2,1,TRUE,FALSE,1,nadamos,swim
+2,2,TRUE,FALSE,1,nadáis,swim
+2,2,TRUE,TRUE,1,nadan,swim
+2,3,TRUE,FALSE,1,nadan,swim
+2,1,FALSE,FALSE,3,nadé,swam
+2,2,FALSE,FALSE,3,nadaste,swam
+2,2,FALSE,TRUE,3,nadó,swam
+2,3,FALSE,FALSE,3,nadó,swam
+2,1,TRUE,FALSE,3,nadamos,swam
+2,2,TRUE,FALSE,3,nadasteis,swam
+2,2,TRUE,TRUE,3,nadaron,swam
+2,3,TRUE,FALSE,3,nadaron,swam
+2,1,FALSE,FALSE,2,nadaba,used to swim
+2,2,FALSE,FALSE,2,nadabas,used to swim
+2,2,FALSE,TRUE,2,nadaba,used to swim
+2,3,FALSE,FALSE,2,nadaba,used to swim
+2,1,TRUE,FALSE,2,nadábamos,used to swim
+2,2,TRUE,FALSE,2,nadabais,used to swim
+2,2,TRUE,TRUE,2,nadaban,used to swim
+2,3,TRUE,FALSE,2,nadaban,used to swim
+2,2,FALSE,FALSE,4,nada,swim
+2,2,FALSE,TRUE,4,nade,swim
+2,2,TRUE,FALSE,4,nadad,swim
+2,2,TRUE,TRUE,4,naden,swim
+2,2,FALSE,FALSE,5,no nadas,do not swim
+2,2,FALSE,TRUE,5,no nade,do not swim
+2,2,TRUE,FALSE,5,no nadéis,do not swim
+2,2,TRUE,TRUE,5,no naden,do not eat
+3,1,FALSE,FALSE,1,soy,am
+3,2,FALSE,FALSE,1,eres,are
+3,2,FALSE,TRUE,1,es,are
+3,3,FALSE,FALSE,1,es,is
+3,1,TRUE,FALSE,1,somos,are
+3,2,TRUE,FALSE,1,sois,are
+3,2,TRUE,TRUE,1,son,are
+3,3,TRUE,FALSE,1,son,are
+3,1,FALSE,FALSE,3,fui,was
+3,2,FALSE,FALSE,3,fuiste,were
+3,2,FALSE,TRUE,3,fue,were
+3,3,FALSE,FALSE,3,fue,was
+3,1,TRUE,FALSE,3,fuimos,were
+3,2,TRUE,FALSE,3,fuisteis,were
+3,2,TRUE,TRUE,3,fueron,were
+3,3,TRUE,FALSE,3,fueron,were
+3,1,FALSE,FALSE,2,era,used to be
+3,2,FALSE,FALSE,2,eras,used to be
+3,2,FALSE,TRUE,2,era,used to be
+3,3,FALSE,FALSE,2,era,used to be
+3,1,TRUE,FALSE,2,éramos,used to be
+3,2,TRUE,FALSE,2,erais,used to be
+3,2,TRUE,TRUE,2,eran,used to be
+3,3,TRUE,FALSE,2,eran,used to be
+5,1,FALSE,FALSE,1,hago,make/do
+5,2,FALSE,FALSE,1,haces,make/do
+5,2,FALSE,TRUE,1,hace,make/do
+5,3,FALSE,FALSE,1,hace,makes/does
+5,1,TRUE,FALSE,1,hacemos,make/do
+5,2,TRUE,FALSE,1,hacéis,make/do
+5,2,TRUE,TRUE,1,hacen,make/do
+5,3,TRUE,FALSE,1,hacen,make/do
+5,1,FALSE,FALSE,2,hacía,used to make/do
+5,2,FALSE,FALSE,2,hacías,used to make/do
+5,2,FALSE,TRUE,2,hacía,used to make/do
+5,3,FALSE,FALSE,2,hacía,used to make/do
+5,1,TRUE,FALSE,2,hacíamos,used to make/do
+5,2,TRUE,FALSE,2,hacíais,used to make/do
+5,2,TRUE,TRUE,2,hacían,used to make/do
+5,3,TRUE,FALSE,2,hacían,used to make/do
+5,1,FALSE,FALSE,3,hice,made/did
+5,2,FALSE,FALSE,3,hiciste,made/did
+5,2,FALSE,TRUE,3,hizo,made/did
+5,3,FALSE,FALSE,3,hizo,made/did
+5,1,TRUE,FALSE,3,hicimos,made/did
+5,2,TRUE,FALSE,3,hicisteis,made/did
+5,2,TRUE,TRUE,3,hicieron,made/did
+5,3,TRUE,FALSE,3,hicieron,made/did
+6,1,FALSE,FALSE,1,vengo,come
+6,2,FALSE,FALSE,1,vienes,come
+6,2,FALSE,TRUE,1,viene,come
+6,3,FALSE,FALSE,1,viene,comes
+6,1,TRUE,FALSE,1,venimos,come
+6,2,TRUE,FALSE,1,venís,come
+6,2,TRUE,TRUE,1,vienen,come
+6,3,TRUE,FALSE,1,vienen,come
+6,1,FALSE,FALSE,3,vine,came
+6,2,FALSE,FALSE,3,viniste,came
+6,2,FALSE,TRUE,3,vino,came
+6,3,FALSE,FALSE,3,vino,came
+6,1,TRUE,FALSE,3,vinimos,came
+6,2,TRUE,FALSE,3,vinisteis,came
+6,2,TRUE,TRUE,3,vinieron,came
+6,3,TRUE,FALSE,3,vinieron,came
+6,1,FALSE,FALSE,2,venía,used to come
+6,2,FALSE,FALSE,2,venías,used to come
+6,2,FALSE,TRUE,2,venía,used to come
+6,3,FALSE,FALSE,2,venía,used to come
+6,1,TRUE,FALSE,2,veníamos,used to come
+6,2,TRUE,FALSE,2,veníais,used to come
+6,2,TRUE,TRUE,2,venían,used to come
+6,3,TRUE,FALSE,2,venían,used to come
+6,2,FALSE,FALSE,4,ven,come
+6,2,FALSE,TRUE,4,venga,come
+6,2,TRUE,FALSE,4,venid,come
+6,2,TRUE,TRUE,4,vengan,come
+6,2,FALSE,FALSE,5,no vengas,don't come
+6,2,FALSE,TRUE,5,no venga,don't come
+6,2,TRUE,FALSE,5,no vengáis,don't come
+6,2,TRUE,TRUE,5,no vengan,don't come
+7,1,FALSE,FALSE,1,llego,come
+7,2,FALSE,FALSE,1,llegas,come
+7,2,FALSE,TRUE,1,llega,come
+7,3,FALSE,FALSE,1,llega,comes
+7,1,TRUE,FALSE,1,llegamos,come
+7,2,TRUE,FALSE,1,llegáis,come
+7,2,TRUE,TRUE,1,llegan,come
+7,3,TRUE,FALSE,1,llegan,come
+7,1,FALSE,FALSE,3,llegué,came
+7,2,FALSE,FALSE,3,llegaste,came
+7,2,FALSE,TRUE,3,llegó,came
+7,3,FALSE,FALSE,3,llegó,came
+7,1,TRUE,FALSE,3,llegamos,came
+7,2,TRUE,FALSE,3,llegasteis,came
+7,2,TRUE,TRUE,3,llegaron,came
+7,3,TRUE,FALSE,3,llegaron,came
+7,1,FALSE,FALSE,2,llegaba,used to come
+7,2,FALSE,FALSE,2,llegabas,used to come
+7,2,FALSE,TRUE,2,llegaba,used to come
+7,3,FALSE,FALSE,2,llegaba,used to come
+7,1,TRUE,FALSE,2,llegábamos,used to come
+7,2,TRUE,FALSE,2,llegabais,used to come
+7,2,TRUE,TRUE,2,llegaban,used to come
+7,3,TRUE,FALSE,2,llegaban,used to come
+7,2,FALSE,FALSE,4,llega,come
+7,2,FALSE,TRUE,4,lleguen,come
+7,2,TRUE,FALSE,4,llegad,come
+7,2,TRUE,TRUE,4,lleguen,come
+7,2,FALSE,FALSE,5,no llegues,don't come
+7,2,FALSE,TRUE,5,no llegue,don't come
+7,2,TRUE,FALSE,5,no lleguéis,don't come
+7,2,TRUE,TRUE,5,no lleguen,don't come
+8,1,FALSE,FALSE,1,veo,see
+8,2,FALSE,FALSE,1,ves,see
+8,2,FALSE,TRUE,1,ve,see
+8,3,FALSE,FALSE,1,ve,sees
+8,1,TRUE,FALSE,1,vemos,see
+8,2,TRUE,FALSE,1,veis,see
+8,2,TRUE,TRUE,1,ven,see
+8,3,TRUE,FALSE,1,ven,see
+8,1,FALSE,FALSE,3,vi,saw
+8,2,FALSE,FALSE,3,viste,saw
+8,2,FALSE,TRUE,3,vio,saw
+8,3,FALSE,FALSE,3,vio,saw
+8,1,TRUE,FALSE,3,vimos,saw
+8,2,TRUE,FALSE,3,visteis,saw
+8,2,TRUE,TRUE,3,vieron,saw
+8,3,TRUE,FALSE,3,vieron,saw
+8,1,FALSE,FALSE,2,veía,used to see
+8,2,FALSE,FALSE,2,veías,used to see
+8,2,FALSE,TRUE,2,veía,used to see
+8,3,FALSE,FALSE,2,veía,used to see
+8,1,TRUE,FALSE,2,veíamos,used to see
+8,2,TRUE,FALSE,2,veíais,used to see
+8,2,TRUE,TRUE,2,veían,used to see
+8,3,TRUE,FALSE,2,veían,used to see
+8,2,FALSE,FALSE,4,ve,see
+8,2,FALSE,TRUE,4,vea,see
+8,2,TRUE,FALSE,4,ved,see
+8,2,TRUE,TRUE,4,vean,see
+8,2,FALSE,FALSE,5,no veas,don't see
+8,2,FALSE,TRUE,5,no vea,don't see
+8,2,TRUE,FALSE,5,no veáis,don't see
+8,2,TRUE,TRUE,5,no vean,don't see
+9,1,FALSE,FALSE,1,voy,go
+9,2,FALSE,FALSE,1,vas,go
+9,2,FALSE,TRUE,1,va,go
+9,3,FALSE,FALSE,1,va,goes
+9,1,TRUE,FALSE,1,vamos,go
+9,2,TRUE,FALSE,1,vais,go
+9,2,TRUE,TRUE,1,van,go
+9,3,TRUE,FALSE,1,van,go
+9,1,FALSE,FALSE,3,fui,went
+9,2,FALSE,FALSE,3,fuiste,went
+9,2,FALSE,TRUE,3,fue,went
+9,3,FALSE,FALSE,3,fue,went
+9,1,TRUE,FALSE,3,fuimos,went
+9,2,TRUE,FALSE,3,fuisteis,went
+9,2,TRUE,TRUE,3,fueron,went
+9,3,TRUE,FALSE,3,fueron,went
+9,1,FALSE,FALSE,2,iba,used to go
+9,2,FALSE,FALSE,2,ibas,used to go
+9,2,FALSE,TRUE,2,iba,used to go
+9,3,FALSE,FALSE,2,iba,used to go
+9,1,TRUE,FALSE,2,íbamos,used to go
+9,2,TRUE,FALSE,2,ibais,used to go
+9,2,TRUE,TRUE,2,iban,used to go
+9,3,TRUE,FALSE,2,iban,used to go
+9,2,FALSE,FALSE,4,ve,go
+9,2,FALSE,TRUE,4,vaya,go
+9,2,TRUE,FALSE,4,id,go
+9,2,TRUE,TRUE,4,vayan,go
+9,2,FALSE,FALSE,5,no vayas,don't go
+9,2,FALSE,TRUE,5,no vaya,don't go
+9,2,TRUE,FALSE,5,no vayáis,don't go
+9,2,TRUE,TRUE,5,no vayan,don't go
+10,1,FALSE,FALSE,1,comienzo,begin
+10,2,FALSE,FALSE,1,comienzas,begin
+10,2,FALSE,TRUE,1,comienza,begin
+10,3,FALSE,FALSE,1,comienza,begins
+10,1,TRUE,FALSE,1,comenzamos,begin
+10,2,TRUE,FALSE,1,comenzáis,begin
+10,2,TRUE,TRUE,1,comienzan,begin
+10,3,TRUE,FALSE,1,comienzan,begin
+10,1,FALSE,FALSE,3,comencé,began
+10,2,FALSE,FALSE,3,comenzaste,began
+10,2,FALSE,TRUE,3,comenzó,began
+10,3,FALSE,FALSE,3,comenzó,began
+10,1,TRUE,FALSE,3,comenzamos,began
+10,2,TRUE,FALSE,3,comenzasteis,began
+10,2,TRUE,TRUE,3,comenzaron,began
+10,3,TRUE,FALSE,3,comenzaron,began
+10,1,FALSE,FALSE,2,comenzaba,used to begin
+10,2,FALSE,FALSE,2,comenzabas,used to begin
+10,2,FALSE,TRUE,2,comenzaba,used to begin
+10,3,FALSE,FALSE,2,comenzaba,used to begin
+10,1,TRUE,FALSE,2,comenzábamos,used to begin
+10,2,TRUE,FALSE,2,comenzabais,used to begin
+10,2,TRUE,TRUE,2,comenzaban,used to begin
+10,3,TRUE,FALSE,2,comenzaban,used to begin
+10,2,FALSE,FALSE,4,comenzad,begin
+10,2,FALSE,TRUE,4,comiencen,begin
+10,2,TRUE,FALSE,4,comiencen,begin
+10,2,TRUE,TRUE,4,comenzad,begin
+10,2,FALSE,FALSE,5,no comiences,don't begin
+10,2,FALSE,TRUE,5,no comience,don't begin
+10,2,TRUE,FALSE,5,no comencéis,don't begin
+10,2,TRUE,TRUE,5,no comiencen,don't begin

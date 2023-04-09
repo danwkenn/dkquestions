@@ -1,0 +1,14 @@
+id,person,plural,formal,word,english_word,gender
+1,1,FALSE,FALSE,yo,I,NA
+2,2,FALSE,FALSE,tú,you (informal),NA
+3,3,FALSE,FALSE,él,he,male
+4,3,FALSE,FALSE,ella,she,female
+6,1,TRUE,FALSE,nosotros,we (masculine),male
+7,1,TRUE,FALSE,nosotras,we (feminine),female
+8,2,TRUE,FALSE,vosotros,you all (informal masculine),male
+9,2,TRUE,FALSE,vosotras,you all (informal feminine),female
+10,3,TRUE,FALSE,ellos,they (masculine),male
+11,3,TRUE,FALSE,ellas,they (feminine),female
+12,1,FALSE,TRUE,yo,I (formal),NA
+13,2,FALSE,TRUE,usted,you (formal),NA
+14,2,TRUE,TRUE,ustedes,you all (formal),NA
