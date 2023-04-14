@@ -18,7 +18,7 @@ create_questions <- function(
     n_questions = 10,
     duplicates = TRUE) {
 
-    if (!duplicates && length(question_templates$templates) == n_questions) {
+    if (!duplicates && length(question_templates$templates) < n_questions) {
         stop("Not enough templates for n_questions")
     }
 
