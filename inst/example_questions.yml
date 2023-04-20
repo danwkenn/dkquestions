@@ -5,7 +5,7 @@ templates:
   slots:
     verbform:
       dataset: temp
-      id: DATATABLE data[tense_english %in% c("present","imperfect","preterite"), id]
+      id: RUN data[tense_english %in% c("present","imperfect","preterite"), id]
       field: verb_form
     english_form:
       dataset: temp

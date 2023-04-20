@@ -1,0 +1,20 @@
+templates:
+  - id: OIRUemDsjVh6JdzCW3QH
+    background: Time to translate numbers.
+    prompt: "Translate '{number}' to Malay:"
+    slots:
+      number:
+        dataset: temp
+        id: 1
+        field: number
+      translation:
+        dataset: temp
+        id: 1
+        field: translation
+    answer:
+    - text: "{translation}"
+      feedback: "Correct!"
+      mark: 1.0
+    preprocessing: inst/example_preprocessing2.R
+    datasets:
+      temp: FUNCTION temp
