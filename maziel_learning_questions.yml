@@ -1,0 +1,13 @@
+- id: M9uAjVw1plBGsf6FCqPK
+  background: Test
+  prompt: test
+  preprocessing: ~
+  slots:
+    dataset: temp
+    id: 1.0
+    field: test
+  answer: ~
+  answers:
+    text: test
+    feedback: asdf
+    mark: 1.0
