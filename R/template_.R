@@ -41,7 +41,11 @@ for (i in seq_along(template$slots)) {
 
   # Extract data-set.
   dataset_name <-  template$slots[[i]]$dataset
+  if (is.character(template$datasets[[dataset_name]])) {
   data <- data.table::fread(template$datasets[[dataset_name]])
+  } else if (data.table::is.data.table()) {
+    data <- template$datasets[[dataset_name]]
+  }
   slot_name <- names(template$slots)[[i]]
 
   if (is.numeric(template$slots[[i]]$id)) {

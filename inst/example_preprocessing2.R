@@ -55,7 +55,7 @@ translate_number.internal <- function(number) {
   return(malay_word)
 }
 
-temp <- function(){
+random_bahasa_integer <- function() {
     temp_file <- tempfile()
 
     int <- sample(1:99, size = 1)

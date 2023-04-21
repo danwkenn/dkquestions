@@ -17,4 +17,4 @@ templates:
       mark: 1.0
     preprocessing: inst/example_preprocessing2.R
     datasets:
-      temp: FUNCTION temp
+      temp: FUNCTION random_bahasa_integer
