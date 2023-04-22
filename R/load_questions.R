@@ -49,3 +49,39 @@ create_questions <- function(
     }
     questions
 }
+
+#' Create questions
+#' @param question_templates Set of templates
+#' @param ids character vector of IDs.
+#' @export 
+create_question_set <- function(
+    question_templates,
+    question_ids) {
+
+    ids <- sapply(question_templates$templates, function(x) x[["id"]])
+
+    sample_ids <- question_ids
+    n_questions <- length(question_ids)
+    questions <- list()
+
+    for (i in seq_len(n_questions)) {
+
+        index <- which(ids == sample_ids[[i]])
+
+        template <- question_templates$templates[[index]]
+        # Source preprocessing
+        if (length(template$preprocessing) > 0) {
+            lapply(template$preprocessing, source)
+        }
+
+        # Replace datasets.
+        for (j in seq_along(template$datasets)) {
+            if (grepl("^FUNCTION", template$datasets[[j]])) {
+                function_name <- sub("^FUNCTION\\s*(.*)$", "\\1", template$datasets[[j]])
+                template$datasets[[j]] <- do.call(function_name, args = list())
+            }
+        }
+        questions[[i]] <- create_question(template)
+    }
+    questions
+}
