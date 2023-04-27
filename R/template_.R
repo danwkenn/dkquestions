@@ -72,6 +72,13 @@ for (i in seq_along(template$slots)) {
   slots[[slot_name]] <- value
 
 }
+
+if (!is.null(template$context)) {
+  template$background <- paste0(
+    template$context,
+    template$background
+  )
+}
 background <- with(
   slots,
   glue::glue(template$background))
