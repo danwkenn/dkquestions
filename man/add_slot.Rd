@@ -4,10 +4,12 @@
 \alias{add_slot}
 \title{Add a slot to a question template}
 \usage{
-add_slot(question_template, dataset, id, field)
+add_slot(question_template, name, dataset, id, field)
 }
 \arguments{
 \item{question_template}{A question template created with `create_question_template`}
+
+\item{name}{Name the slot will take}
 
 \item{dataset}{The dataset}
 

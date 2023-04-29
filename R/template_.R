@@ -43,7 +43,7 @@ for (i in seq_along(template$slots)) {
   dataset_name <-  template$slots[[i]]$dataset
   if (is.character(template$datasets[[dataset_name]])) {
   data <- data.table::fread(template$datasets[[dataset_name]])
-  } else if (data.table::is.data.table()) {
+  } else if (data.table::is.data.table(template$datasets[[dataset_name]])) {
     data <- template$datasets[[dataset_name]]
   }
   slot_name <- names(template$slots)[[i]]

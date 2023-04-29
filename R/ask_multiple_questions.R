@@ -20,7 +20,7 @@ subset <- subset_templates_by_id(
 )
 sample_id <- sample(seq_along(subset), 1)
 template <- subset[[sample_id]]
-question <- create_question(template)
+question <- bake_question(template)
 if (!(template$id %in% previous_qs)) {
 result <- ask_question_cmd(question)
 cat(result$feedback)

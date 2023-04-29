@@ -5,6 +5,7 @@
 \title{Create a template}
 \usage{
 create_question_template(
+  context,
   background,
   prompt,
   preprocessing_script = NULL,
@@ -12,6 +13,8 @@ create_question_template(
 )
 }
 \arguments{
+\item{context}{Context for the conversation}
+
 \item{background}{context for question}
 
 \item{prompt}{instruction to answer the question}
