@@ -30,7 +30,7 @@ get_value <- function(data, sample_id, slot) {
 }
 
 #' Create a question from a template.
-#' 
+#'
 #' @param template A question template.
 #' @import data.table
 #' @export
@@ -55,7 +55,12 @@ for (i in seq_along(template$slots)) {
    not_id <- slots[[paste0(not_slot, "_ID")]]
    remaining_ids <- setdiff(template$slots[[not_slot]]$id, not_id)
    sample_id <- sample_from(remaining_ids)
-   } else if (grepl(template$slots[[i]]$id, pattern = "^DATATABLE\\s")) {
+  } else if (grepl(template$slots[[i]]$id, pattern = "^EXPRESSION\\s")) {
+   expression <- sub("^EXPRESSION\\s+(.*)$", "\\1", template$slots[[i]]$id)
+   expression <- parse(text = expression)
+   ids <- eval(expression)
+   sample_id <- sample_from(ids)
+  } else if (grepl(template$slots[[i]]$id, pattern = "^DATATABLE\\s")) {
    expression <- sub("^DATATABLE\\s+(.*)$", "\\1", template$slots[[i]]$id)
    expression <- parse(text = expression)
    remaining_ids <- eval(expression)

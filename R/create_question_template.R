@@ -125,6 +125,12 @@ add_dataset <- function(
                 "FUNCTION ",
                 value
             )
+    } else if (type == "expression") {
+        question_template$datasets[[name]] <- 
+            paste0(
+                "EXPRESSION ",
+                value
+            )
     }
     question_template
 }

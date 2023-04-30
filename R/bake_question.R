@@ -15,6 +15,9 @@ bake_question <- function(
       if (grepl("^FUNCTION", template$datasets[[j]])) {
           function_name <- sub("^FUNCTION\\s*(.*)$", "\\1", template$datasets[[j]])
           template$datasets[[j]] <- do.call(function_name, args = list())
+      } else if (grepl("^EXPRESSION", template$datasets[[j]])) {
+          expression <- sub("^EXPRESSION\\s*(.*)$", "\\1", template$datasets[[j]])
+          template$datasets[[j]] <- eval(parse(text = expression))
       }
   }
   create_question(template)
