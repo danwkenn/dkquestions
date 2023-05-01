@@ -16,8 +16,8 @@ i <- 1
 while (i <= (n_questions)) {
 subset <- subset_templates_by_id(
   question_templates,
-  ids = question_ids
-)
+  ids = question_ids)
+
 sample_id <- sample(seq_along(subset), 1)
 template <- subset[[sample_id]]
 question <- bake_question(template)
