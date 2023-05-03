@@ -10,6 +10,7 @@ ask_multiple_questions_cmd <- function(
 if (n_questions > length(question_templates)) {
   stop("Not enough questions in list.")
 }
+question_ids <- sapply(question_templates, function(x){x[["id"]]})
 answers <- list()
 previous_qs <- c()
 i <- 1
