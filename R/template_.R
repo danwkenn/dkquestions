@@ -217,3 +217,18 @@ subset_templates_by_id <- function(
   template_list[matches]
 }
 
+#' Subset by ID
+#' @param template_list a list of question templates
+#' @param ids Ids of the templates to be subsetted.
+#' @export
+match_templates_by_id <- function(
+  template_list,
+  ids) {
+
+  # Extract IDs
+  template_ids <- sapply(template_list, function(x) x[["id"]])
+  # Find items which match
+  matches <- match(ids, template_ids)
+  # Return the subset
+  template_list[matches]
+}

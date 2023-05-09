@@ -4,12 +4,21 @@
 \alias{ask_multiple_questions_cmd}
 \title{Ask multiple questions}
 \usage{
-ask_multiple_questions_cmd(question_templates, n_questions = 1)
+ask_multiple_questions_cmd(
+  question_templates,
+  random = FALSE,
+  n_questions = 1,
+  replace = FALSE
+)
 }
 \arguments{
 \item{question_templates}{Set of questions}
 
+\item{random}{If random, then questions are chosen at random.}
+
 \item{n_questions}{Number of questions to ask}
+
+\item{replace}{If replace, then same question can come up multiple times.}
 }
 \description{
 Ask multiple questions

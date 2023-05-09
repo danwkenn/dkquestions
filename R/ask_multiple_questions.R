@@ -1,17 +1,35 @@
 #' Ask multiple questions
 #' @param question_templates Set of questions
 #' @param n_questions Number of questions to ask
+#' @param replace If replace, then same question can come up multiple times.
+#' @param random If random, then questions are chosen at random.
 #' @export
 ask_multiple_questions_cmd <- function(
   question_templates,
-  n_questions = 1
+  random = FALSE,
+  n_questions = 1,
+  replace = FALSE
 ) {
+
+answers <- list()
+# Non-random
+if (!random) {
+  for (i in seq_along(question_templates)) {
+    question <- bake_question(
+      question_templates[[i]]
+    )
+    result <- ask_question_cmd(question)
+    cat(result$feedback)
+    cat("\n")
+    answers[[i]] <- result 
+  }
+  return(answers)
+}
 
 if (n_questions > length(question_templates)) {
   stop("Not enough questions in list.")
 }
 question_ids <- sapply(question_templates, function(x){x[["id"]]})
-answers <- list()
 previous_qs <- c()
 i <- 1
 while (i <= (n_questions)) {
