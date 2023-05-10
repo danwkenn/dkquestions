@@ -158,7 +158,7 @@ ask_question_cmd <- function(question) {
   cat(question$prompt)
   cat("\n")
 
-  answer <- readline("RESPONSE - ")
+  answer <- readline2("RESPONSE - ")
 
   answer_texts <- sapply(
     question$answer,
