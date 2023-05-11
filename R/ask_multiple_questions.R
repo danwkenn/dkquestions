@@ -21,6 +21,12 @@ if (!random) {
     result <- ask_question_cmd(question)
     cat(result$feedback)
     cat("\n")
+    if (result$feedback == "Incorrect") {
+      cat("Correct Answer:\n")
+      cat(result$correct_answers[[1]]$text)
+      cat("\n")
+      cat("\n")
+    }
     answers[[i]] <- result 
   }
   return(answers)
