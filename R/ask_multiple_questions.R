@@ -23,7 +23,7 @@ if (!random) {
     cat("\n")
     if (result$feedback == "Incorrect") {
       cat("Correct Answer:\n")
-      cat(result$correct_answers[[1]]$text)
+      cat(format_answer_text(result$correct_answers[[1]]$text))
       cat("\n")
       cat("\n")
     }
