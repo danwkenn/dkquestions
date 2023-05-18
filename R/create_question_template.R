@@ -156,9 +156,9 @@ add_preprocessing_script <- function(
 }
 
 #' Add Additional Details
-#' @param question_template
-#' @param detail_name
-#' @param value
+#' @param question_template a question template
+#' @param detail_name the name of the detail to add
+#' @param value the detail value.
 #' @export
 add_additional_detail <- function(
     question_template,
@@ -177,8 +177,8 @@ add_additional_detail <- function(
 }
 
 #' Get Additional Details
-#' @param question_templates
-#' @param detail_name
+#' @param question_templates the question template
+#' @param detail_name the detail name
 #' @export
 get_additional_details <- function(
     question_templates,

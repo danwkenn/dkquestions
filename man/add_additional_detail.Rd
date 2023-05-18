@@ -6,6 +6,13 @@
 \usage{
 add_additional_detail(question_template, detail_name, value)
 }
+\arguments{
+\item{question_template}{a question template}
+
+\item{detail_name}{the name of the detail to add}
+
+\item{value}{the detail value.}
+}
 \description{
 Add Additional Details
 }

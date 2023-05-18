@@ -6,6 +6,11 @@
 \usage{
 get_additional_details(question_templates, detail_name)
 }
+\arguments{
+\item{question_templates}{the question template}
+
+\item{detail_name}{the detail name}
+}
 \description{
 Get Additional Details
 }
