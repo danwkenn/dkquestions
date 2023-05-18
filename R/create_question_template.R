@@ -154,3 +154,45 @@ add_preprocessing_script <- function(
 
     question_template
 }
+
+#' Add Additional Details
+#' @param question_template
+#' @param detail_name
+#' @param value
+#' @export
+add_additional_detail <- function(
+    question_template,
+    detail_name,
+    value) {
+    if (is.null(question_template$additional_details)) {
+        question_template$additional_details <- list()
+    }
+
+    question_template$additional_details <- c(
+        question_template$additional_details,
+        setNames(value, detail_name)
+    )
+
+    question_template
+}
+
+#' Get Additional Details
+#' @param question_templates
+#' @param detail_name
+#' @export
+get_additional_details <- function(
+    question_templates,
+    detail_name) {
+
+    extract_fun <- function(x) {
+        detail <- x[["additional_details"]][[detail_name]]
+        id <- x[["id"]]
+        if (is.null(detail)) {
+            return(setNames(NA_character_, id))
+        } else {
+            return(setNames(detail, id))
+        }
+    }
+
+    sapply(question_templates, extract_fun)
+}

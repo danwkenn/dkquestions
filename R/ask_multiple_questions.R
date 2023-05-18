@@ -27,7 +27,7 @@ if (!random) {
       cat("\n")
       cat("\n")
     }
-    answers[[i]] <- result 
+    answers[[i]] <- result
   }
   return(answers)
 }
