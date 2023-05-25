@@ -95,6 +95,7 @@ question_template
 #' Internal function for processing IDs.
 #' @param x Ids as string.
 process_ids_from_string <- function(x) {
+  x <- as.character(x)
   if (grepl("^(\\d+\\,)*\\d+$", x)) {
     as.integer(strsplit(x, "\\,")[[1]])
   } else {

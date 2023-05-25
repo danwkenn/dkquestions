@@ -5,6 +5,8 @@ replace_parentheses <- function(x) {
   # Replace the matches with the first option in the parentheses
   replaced_text <- gsub(pattern, "\\1", x)
 
+  # Remove the Grepl indicators:
+  replaced_text <- gsub("^GREPL\\^(.*)\\$$", "\\1", replaced_text)
   return(replaced_text)
 }
 
