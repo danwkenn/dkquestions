@@ -61,6 +61,36 @@ if (!is.na(question_data$`Slot 3 - Name`)) {
     process_ids_from_string(question_data$`Slot 3 - ID`[[1]])
 }
 
+if (!is.na(question_data$`Slot 4 - Name`)) {
+  slots[[question_data$`Slot 4 - Name`]] <- list()
+  slots[[question_data$`Slot 4 - Name`]][["dataset"]] <- 
+    question_data$`Slot 4 - Dataset`
+  slots[[question_data$`Slot 4 - Name`]][["field"]] <- 
+    question_data$`Slot 4 - Field`
+  slots[[question_data$`Slot 4 - Name`]][["id"]] <- 
+    process_ids_from_string(question_data$`Slot 4 - ID`[[1]])
+}
+
+if (!is.na(question_data$`Slot 5 - Name`)) {
+  slots[[question_data$`Slot 5 - Name`]] <- list()
+  slots[[question_data$`Slot 5 - Name`]][["dataset"]] <- 
+    question_data$`Slot 5 - Dataset`
+  slots[[question_data$`Slot 5 - Name`]][["field"]] <- 
+    question_data$`Slot 5 - Field`
+  slots[[question_data$`Slot 5 - Name`]][["id"]] <- 
+    process_ids_from_string(question_data$`Slot 5 - ID`[[1]])
+}
+
+if (!is.na(question_data$`Slot 6 - Name`)) {
+  slots[[question_data$`Slot 6 - Name`]] <- list()
+  slots[[question_data$`Slot 6 - Name`]][["dataset"]] <- 
+    question_data$`Slot 6 - Dataset`
+  slots[[question_data$`Slot 6 - Name`]][["field"]] <- 
+    question_data$`Slot 6 - Field`
+  slots[[question_data$`Slot 6 - Name`]][["id"]] <- 
+    process_ids_from_string(question_data$`Slot 6 - ID`[[1]])
+}
+
 datasets <- list()
 if (!is.na(question_data$`Dataset 1 - Name`)) {
   datasets[[question_data$`Dataset 1 - Name`]] <- 
